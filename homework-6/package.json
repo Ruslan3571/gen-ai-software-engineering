@@ -1,0 +1,25 @@
+{
+  "name": "homework-6-banking-pipeline",
+  "version": "1.0.0",
+  "description": "AI-Powered Multi-Agent Banking Transaction Pipeline",
+  "main": "integrator.js",
+  "scripts": {
+    "pipeline": "node integrator.js",
+    "validate": "node agents/transaction_validator.js --dry-run",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint agents/**/*.js src/**/*.js integrator.js tests/**/*.js",
+    "lint:fix": "eslint agents/**/*.js src/**/*.js integrator.js tests/**/*.js --fix"
+  },
+  "keywords": ["banking", "pipeline", "agents", "fraud-detection"],
+  "author": "Ruslan Formanchuk",
+  "license": "MIT",
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.4",
+    "jest": "^29.7.0"
+  }
+}

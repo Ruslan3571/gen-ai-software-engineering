@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeShellExecution": [
+      {
+        "command": ".cursor/hooks/coverage-gate.sh",
+        "matcher": "git push",
+        "failClosed": true
+      }
+    ]
+  }
+}

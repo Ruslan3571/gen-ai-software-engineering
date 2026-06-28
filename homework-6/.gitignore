@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+shared/
+.env
+.DS_Store
+*.log
+mcp/.venv/
+mcp/__pycache__/
